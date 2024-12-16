@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table, th,td{
+  border:1px solid black;
+}
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="assests/logo/Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="assests/logo/header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          
+        <!-- <div class="lesson-title">Mean, Median, and Mode</div> -->
+        
+        <div>
+          <img src="./assests/explaination/1.png" alt="" width="80%"><br>
+        
+          <h2 style="text-align: center;">Let's Look at the score of Alice:</h2>
+          <img src="./assests/explaination/2.png" alt="" width="80%"><br>
+          <p>We can see that her scores range between 60 to 90, however she has different scores in most of the months. So in cases where the numbers are clearly within a range, there are no extreme values (outliers), we find Average of the data by using a method called Mean</p>
+          <br><img src="./assests/explaination/3.png" alt="" width="70%"><br>
+          <p>
+            <b>So the Average for Alice is</b>
+          </p><br>
+          <img src="./assests/explaination/4.png" alt="" width="80%"><br>
+          <h3 style="color: blue;">Though 74 is not one of the scores scored by Alice but it gives us the middle value of his scores.</h3><br>
+          
+        </div>
+        
+        <br>
+         <hr>
+         <div>
+          <h2 style="text-align: center;">Now let’s look at Charlie’s scores:</h2>
+          
+          <br>
+          <img src="./assests/explaination/5.png" alt="" width="80%"><br>
+          <p>If you see Charlie's scores, in Month1 he had an extremely low score and in month 7 he had scored very high. In such cases we use another way to analyze the data which is called Median.</p>
+          <h2>📈 Median:</h2>
+          <p>
+            The <b>median</b> is the middle number in a dataset when the numbers are arranged in order.
+            <br><br>Arranging Charlie’s score in ascending order we get:
+            <br><img src="./assests/explaination/6.png" alt="" width="80%"><br>
+            Here the middle number is 79, hence the median is 79.
+            <br>
+
+          </p>
+          <br>
+          
+        </div>
+        <hr>
+        <div>
+          <br>
+          <h2 style="text-align: center;">Now let's look Diana’s scores:</h2>
+          <p>
+            
+            <br><img src="./assests/explaination/7.png" alt="" width="80%"><br>
+            <br>If you look at this data, Diana's scores range between 80 to 85, however most of the time she was scoring 85. Hence we do not need to find Mean or Median. Here we can use a method called <b>Mode</b>.
+          </p>
+          <h2>🎯 Mode:</h2>
+          <p>
+            The <b>mode</b> is the number that appears most frequently in a dataset.
+            <br>Hence, in this data Mode is 85.
+            <br><br>Mode is also very useful when data is non-numeric (categorical) or when you are interested in the most frequently occurring data point. It is especially helpful in analyzing consumer preferences or behaviors.
+            
+          </p>
+  
+          <h3>📌 Example (Unimodal):</h3>
+          <ul>
+            <li>📊 <b>Data:</b> Favorite fruits: Apple, Banana, Apple, Orange, Banana, Apple.</li>
+            <li>🎉 <b>Mode:</b> Apple</li>
+            <li>🍎 <b>Result:</b> Apple is the most preferred fruit.</li>
+          </ul>
+          <img src="./assests/images/3.png" alt="" width="50%">
+          <h3>📌 Example with Multiple Modes (Bimodal or Multimodal):</h3>
+          <ul>
+            <li>📊 <b>Data:</b> Favorite colors: Red, Blue, Red, Green, Blue.</li>
+            <li>🎉 <b>Mode:</b> Red and Blue</li>
+            <li>🌈 <b>Result:</b> Both Red and Blue appear most frequently, indicating a tie in preferences.</li>
+          </ul>
+        </div>
+        <hr>
+        <div>
+          <h2>📚 Examples:</h2>
+          
+          <h3>🔍 Example 1: School Performance Analysis</h3>
+          <p>
+            <b>Situation:</b> A school principal wants to analyze the overall performance of students in a standardized test. Scores range from 0 to 100, but a few students scored exceptionally high due to a special preparation program.
+          </p>
+          <p>
+            <b>Decision:</b> Use the <b>median</b> to determine the typical student score because the high scores of the few might distort the mean, making it less representative of the general student body.
+          </p>
+          <p>
+            <b>Calculation:</b>
+          </p>
+          <ul>
+            <li>📊 <b>Scores:</b> 55, 60, 65, 70, 95, 98, 100</li>
+            <li>🔢 <b>Ordered Scores:</b> 55, 60, 65, 70, 95, 98, 100</li>
+            <li>🎯 <b>Median Score:</b> 70</li>
+          </ul>
+          <p>
+            ✅ The median is <b>70</b>, indicating that half of the students scored below 70 and the other half scored above, offering a balanced view of overall student performance.
+          </p>
+          
+          <h3>🔍 Example 2: Customer Satisfaction Survey</h3>
+          <p>
+            <b>Situation:</b> A company conducts a customer satisfaction survey where customers rate their satisfaction on a scale of 1 to 5. The results are mostly 3s and 4s, but there are a significant number of 1s and 5s as well.
+          </p>
+          <p>
+            <b>Decision:</b> Use the <b>mode</b> to identify the most common customer satisfaction level. This helps in understanding the most frequent customer experience.
+          </p>
+          <p>
+            <b>Calculation:</b>
+          </p>
+          <ul>
+            <li>📊 <b>Ratings:</b> 3, 4, 3, 1, 5, 3, 4, 3, 5, 5</li>
+            <li>🎯 <b>Mode:</b> 3</li>
+          </ul>
+          <p>
+            ✅ The mode is <b>3</b>, indicating that the most common rating given by customers is 3, suggesting moderate satisfaction across the customer base.
+          </p>
+          
+          <h3>🔍 Example 3: Annual Household Income Data</h3>
+          <p>
+            <b>Situation:</b> An economist analyzes annual household incomes in a region where the data is distorted by a few high-income households.
+          </p>
+          <p>
+            <b>Decision:</b> Use the <b>median</b> to avoid the skewing effect of high incomes and get a better sense of what a typical household earns.
+          </p>
+          <p>
+            <b>Calculation:</b>
+          </p>
+          <ul>
+            <li>📊 <b>Incomes (in thousands):</b> 30, 40, 45, 50, 250 (outlier), 60, 70</li>
+            <li>🔢 <b>Ordered Incomes:</b> 30, 40, 45, 50, 60, 70, 250</li>
+            <li>🎯 <b>Median Income:</b> 50 thousand</li>
+          </ul>
+          <p>
+            ✅ The median income is <b>$50,000</b>, offering a more accurate reflection of the central tendency of the income distribution without the influence of extreme values.
+          </p>
+        </div>
+        
+
+      
+    </div>
+  </body>
+</html>
